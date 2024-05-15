@@ -1,0 +1,7 @@
+test:cargo:
+  image: "rust:latest"
+  stage: test
+  script:
+  - cargo test lexer
+  - cargo test parser
+  - cargo test interpreter
